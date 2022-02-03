@@ -21,7 +21,7 @@ public class C03_FacebookTest {
         facebookPage.girisButton.click();
         //4- Basarili giris yapilamadigini test edin
         Assert.assertTrue(facebookPage.hataliGiris.isDisplayed());
-
+        Driver.closeDriver();
 
     }
 }
