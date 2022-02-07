@@ -34,12 +34,17 @@ public class C02_WebTable {
         System.out.println(hotelMyCampWebTablePage.tumBodyWebElement.getText());
 
     }
-    @Test
+    @Test(dependsOnMethods = "login")
     public void printRows() {
 
         //● printRows( ) metodu oluşturun //tr
         //            ○ table body’sinde bulunan toplam satir(row) sayısını bulun.
+        hotelMyCampWebTablePage=new HotelMyCampWebTablePage();
+        System.out.println(hotelMyCampWebTablePage.satırlarList.size());
         //            ○ Table body’sinde bulunan satirlari(rows) konsolda yazdırın.
+        hotelMyCampWebTablePage.satırlarList.stream().forEach(t-> System.out.println("eleman : "+t.getText()));
         //            ○ 4.satirdaki(row) elementleri konsolda yazdırın.
+        hotelMyCampWebTablePage.satırlarList.stream().limit(4).skip(3).forEach(t-> System.out.println(t.getText()));
+
     }
 }
