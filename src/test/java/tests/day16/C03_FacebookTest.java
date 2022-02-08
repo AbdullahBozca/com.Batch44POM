@@ -8,7 +8,7 @@ import pages.FacebookPage;
 import utilities.Driver;
 
 public class C03_FacebookTest {
-    @Test
+    @Test(groups = {"miniRegression", "regression"})
     public void facebookTest() {
         //1 - https://www.facebook.com/ adresine gidin
         Driver.getDriver().get("https://facebook.com");

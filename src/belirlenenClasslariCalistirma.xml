@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirli Classlar">
+    <test name="classlar">
+        <classes>
+            <class name="tests.day19.C02_WebTableDemoQa"></class>
+            <class name="tests.day18.C02_WebTable"></class>
+            <class name="tests.day17.C02_PropertiesIlkClass"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,4 +1,4 @@
-package smoke_test;
+package tests.smoke_test;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;

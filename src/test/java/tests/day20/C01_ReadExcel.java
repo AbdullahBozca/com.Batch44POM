@@ -2,6 +2,7 @@ package tests.day20;
 
 import org.apache.poi.ss.usermodel.*;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
@@ -20,6 +21,14 @@ public class C01_ReadExcel {
         Row row=sheet.getRow(4);
         Cell cell=row.getCell(2);
         System.out.println(cell);
+        //indexi 4 olan satırdaki index 2 olan hücrenin Andorra olduğunu test edin
+        String expectedData="Andorra";
+        Assert.assertEquals(cell.getStringCellValue(),expectedData);
+        //5. index deki satırın 3. index deki hücre bilgisini yazdırın
+        row=sheet.getRow(5);
+        cell=row.getCell(3);
+        System.out.println(cell);
+
 
     }
 }

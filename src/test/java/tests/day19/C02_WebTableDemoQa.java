@@ -7,7 +7,7 @@ public class C02_WebTableDemoQa {
     //Bir Class olusturun D19_WebtablesHomework
 
 
-    @Test
+    @Test(groups = {"smoke","regression"})
     public void demo_qa_page_test() {
         //  1. “https://demoqa.com/webtables” sayfasina gidin
         DemoQaPage demoQaPage=new DemoQaPage();
